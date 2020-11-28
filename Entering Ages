@@ -1,0 +1,32 @@
+# include <iostream>
+using namespace std;
+int main()
+{
+   int age;
+   cout << "Enter Age of the user : " << endl;
+   cin >> age;
+   if(age <= 0)
+   {
+      cout << "Entered Age of the user is Invalid\n" <<endl;
+   }
+   else if((age > 0) && (age < 18))
+   {
+      cout << "Entered Age of the user is Not Eligible for voting\n" << endl;
+   }
+   else if(age >= 18)
+   {
+      if(age < 60)
+      {
+         cout << "Entered user is Not A Senior Citizen\n" <<endl;
+      }
+      else if((age >= 60) && (age < 100))
+      {
+         cout << "Entered user is A Senior Citizen\n" << endl;
+      }
+      else if (age >= 100)
+      {
+         cout << "Entered user is A Super Senior Citizen\n" << endl;
+      }
+   }
+   return 0;
+}
